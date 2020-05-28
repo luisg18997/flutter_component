@@ -14,7 +14,8 @@ class _InputPageState extends State<InputPage> {
   String _password = '';
   String _date = ''; 
   String _optionSelected = 'Volar';
-  List<String> _powers = ['volar','rayos X', 'Super Aliento', 'Super Fuerza'];
+
+  List<String> _powers = ['Volar','Rayos X', 'Super Aliento', 'Super Fuerza'];
   
   TextEditingController _inputFieldDateController = new TextEditingController();
 
@@ -146,7 +147,7 @@ class _InputPageState extends State<InputPage> {
     return  Row(
       children: <Widget>[
         Icon(Icons.select_all),
-        SizedBox(width: 30.0,),
+        SizedBox(width: 30.0),
         Expanded(
           child: DropdownButton(
             items: getoptionMenu(),
